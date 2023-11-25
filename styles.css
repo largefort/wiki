@@ -1,0 +1,85 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Sidebar styling */
+#wrapper {
+  display: flex;
+}
+
+#sidebar-wrapper {
+  min-width: 250px;
+  max-width: 250px;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#page-content-wrapper {
+  flex: 1;
+}
+
+/* Header styling */
+header {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Main content styling */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Article links styling */
+#article-links a {
+  display: block;
+  background-color: #f8f9fa;
+  color: #343a40;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+#article-links a:hover {
+  background-color: #e2e6ea;
+}
+
+/* Article content styling */
+#article-content {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Article form styling */
+#article-form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Bootstrap overrides */
+.btn-primary {
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.btn-primary:hover {
+  background-color: #23272b;
+  border-color: #23272b;
+}
