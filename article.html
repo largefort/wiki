@@ -8,15 +8,30 @@
   <title>My Wiki Article</title>
 </head>
 <body>
-  <header class="bg-dark text-light text-center py-3">
-    <h1>My Wiki</h1>
-  </header>
-  
-  <main class="container my-4">
-    <section id="article-content">
-      <!-- Display the content of the selected article -->
-    </section>
-  </main>
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">My Wiki</div>
+      <div class="list-group list-group-flush">
+        <a href="index.html" class="list-group-item list-group-item-action">Home</a>
+        <a href="wiki.html" class="list-group-item list-group-item-action">Wiki</a>
+        <a href="article.html" class="list-group-item list-group-item-action">Create Article</a>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <header class="bg-dark text-light text-center py-3">
+        <h1>My Wiki</h1>
+      </header>
+
+      <main class="container my-4">
+        <section id="article-content">
+          <!-- Display the content of the selected article -->
+        </section>
+      </main>
+    </div>
+  </div>
 
   <script src="article.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
